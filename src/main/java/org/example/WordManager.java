@@ -3,6 +3,12 @@ import java.util.Scanner;
 
 public class WordManager {
     Scanner input = new Scanner(System.in);
+    WordCrud wc;
+
+    //Constructor for WordManager that has WordCrud object
+    public WordManager() {
+        wc = new WordCrud(input);
+    }
 
     public int sMenu() {
         //Display the menu list for user
@@ -30,7 +36,7 @@ public class WordManager {
 
             //If user input 4, call the addWord function
             if(menuNum == 4) {
-                //add code to add vocabulary
+                wc.addWord();
             }
             if(menuNum == 0){
                 System.out.println("You have successfully terminated the program");

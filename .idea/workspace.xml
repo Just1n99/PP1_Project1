@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69326086-a5ee-4182-a396-e3d0911b400c" name="Changes" comment="First Outline of Project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Word.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" afterDir="false" />
+    <list default="true" id="69326086-a5ee-4182-a396-e3d0911b400c" name="Changes" comment="Added new functions and notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +73,14 @@
       <workItem from="1694078639552" duration="21000" />
       <workItem from="1694078681096" duration="104000" />
       <workItem from="1694078803414" duration="302000" />
+      <workItem from="1694079128128" duration="175000" />
+      <workItem from="1694079343398" duration="39000" />
+      <workItem from="1694079394512" duration="5000" />
+      <workItem from="1694079428926" duration="22000" />
+      <workItem from="1694079493205" duration="62000" />
+      <workItem from="1694079567961" duration="54000" />
+      <workItem from="1694079634032" duration="13000" />
+      <workItem from="1694079677710" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="First Outline of Project">
       <option name="closed" value="true" />
@@ -83,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693916314401</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added new functions and notes">
+      <option name="closed" value="true" />
+      <created>1694079255357</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694079255357</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Outline of Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Outline of Project" />
+    <MESSAGE value="Added new functions and notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new functions and notes" />
   </component>
 </project>
