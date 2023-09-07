@@ -34,16 +34,18 @@ public class WordManager {
         while(true) {
             int menuNum = sMenu();
 
-            //If user input 4, call the addWord function
+            //If user inputs 4, call the addWord function
             if(menuNum == 4) {
                 wc.addWord();
             }
+            //If user inputs 0, display message and exit program
             if(menuNum == 0){
-                System.out.println("You have successfully terminated the program");
+                System.out.println("You have successfully terminated the program. GoodBye!");
                 System.exit(0);
             }
+            //If user inputs 1, call the displayList function
             else if(menuNum == 1) {
-                //code to display the whole list
+                wc.displayList();
             }
         }
     }

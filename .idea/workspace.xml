@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69326086-a5ee-4182-a396-e3d0911b400c" name="Changes" comment="Added new functions and notes">
+    <list default="true" id="69326086-a5ee-4182-a396-e3d0911b400c" name="Changes" comment="Completed adding feature and fixed bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" afterDir="false" />
@@ -80,7 +80,7 @@
       <workItem from="1694079493205" duration="62000" />
       <workItem from="1694079567961" duration="54000" />
       <workItem from="1694079634032" duration="13000" />
-      <workItem from="1694079677710" duration="1104000" />
+      <workItem from="1694079677710" duration="2275000" />
     </task>
     <task id="LOCAL-00001" summary="First Outline of Project">
       <option name="closed" value="true" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694079255357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed adding feature and fixed bugs">
+      <option name="closed" value="true" />
+      <created>1694082491635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694082491635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Outline of Project" />
     <MESSAGE value="Added new functions and notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new functions and notes" />
+    <MESSAGE value="Completed adding feature and fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed adding feature and fixed bugs" />
   </component>
 </project>

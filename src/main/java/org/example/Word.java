@@ -38,6 +38,12 @@ public class Word {
 
     @Override
     public String toString() {
-        return super.toString();
+        //Code to get the number of "*" depending on level user had input
+        String displayLevel = "";
+        for(int i = 0; i < level; i++)
+            displayLevel = displayLevel + "*";
+
+        //Return the entire information of each vocab from level, word, then meaning
+        return String.format("%-3s", displayLevel)+ String.format("%15s", vocab) + "  " + def;
     }
 }
