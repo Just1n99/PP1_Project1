@@ -5,6 +5,7 @@ public class WordManager {
     Scanner input = new Scanner(System.in);
 
     public int sMenu() {
+        //Display the menu list for user
         System.out.println("*** 영단어 마스터 ***");
         System.out.print("*******************************\n"
                 + "1. 모든 단어 보기\n"
@@ -15,15 +16,19 @@ public class WordManager {
                 + "6. 단어 삭제\n"
                 + "7. 파일 저장\n"
                 + "0. 나가기\n"
-                +"*******************************\n");
+                +"*******************************\n"
+                + "=> 원하는 메뉴는? ");
 
+        //Return the number the user has input
         return input.nextInt();
     }
 
     public void start() {
+        //Continue to loop until the user inputs the exit code
         while(true) {
             int menuNum = sMenu();
 
+            //If user input 4, call the addWord function
             if(menuNum == 4) {
                 //add code to add vocabulary
             }
