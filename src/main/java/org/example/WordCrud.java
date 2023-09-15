@@ -16,6 +16,7 @@ public class WordCrud implements ICRUD {
     //Function to get the information of the new vocab
     @Override
     public Object add() {
+        int id;
         //Get the level and new vocab from user
         System.out.print("=> 난이도(1, 2, 3) & 새 단어 입력: ");
         int level = input.nextInt();
@@ -25,7 +26,7 @@ public class WordCrud implements ICRUD {
         System.out.print("뜻 입력: ");
         String def = input.nextLine();
 
-        return new Word(level, vocab, def);
+        return new Word(id = 0, level, vocab, def);
     }
 
     public void addWord() {
@@ -40,5 +41,10 @@ public class WordCrud implements ICRUD {
             System.out.println(list.get(i).toString());
         }
         System.out.println("--------------------------------");
+    }
+    public void update() {
+        System.out.print("=> 수정할 단어 검색: ");
+        String token = input.next();
+
     }
 }

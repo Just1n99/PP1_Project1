@@ -43,6 +43,18 @@ public class WordManager {
                 System.out.println("You have successfully terminated the program. GoodBye!");
                 System.exit(0);
             }
+            if(menuNum == 3) {
+                //Code to search for word in list
+            }
+            if(menuNum == 5) {
+                wc.update();
+            }
+            if(menuNum == 6){
+                //code to delete word in list
+            }
+            if(menuNum == 7) {
+                //code to safe file
+            }
             //If user inputs 1, call the displayList function
             else if(menuNum == 1) {
                 wc.displayList();

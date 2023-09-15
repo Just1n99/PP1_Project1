@@ -1,11 +1,13 @@
 package org.example;
 
 public class Word {
+    private int id;
     private int level;
     private String vocab;
     private String def;
 
-    public Word(int level, String vocab, String def) {
+    public Word(int id, int level, String vocab, String def) {
+        this.id = id;
         this.level = level;
         this.vocab = vocab;
         this.def = def;
