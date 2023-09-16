@@ -131,11 +131,28 @@ public class WordCrud implements ICRUD {
             //try to see if there is a file name dictionary.txt
             BufferedReader buffer = new BufferedReader(new FileReader("dictionary.txt"));
             String line;
+            int numWords = 0;
             //read each line
-            line = buffer.readLine();
-            //split each data in line and add them to array
-            String data[] = line.split("\\|");
+            while(true) {
+                line = buffer.readLine();
+                //if we reach the end of file, break out of loop
+                if(line == null)
+                    break;
+                //split each data in line and add them to array
+                String data[] = line.split("\\|");
+                //the first information will be set as the integer level
+                int level = Integer.parseInt(data[0]);
+                //the second information will be set as the word
+                String vocab = data[1];
+                //the third information will be set as the meaning
+                String def = data[2];
+                //add all the information of the vocab into the list
+                list.add(new Word(0, level, vocab, def));
+                //increment numWords
+                numWords++;
+            }
             buffer.close();
+            System.out.println("=> " + numWords + "개 로딩 완료!");
         }
         catch(IOException e){
             e.printStackTrace();

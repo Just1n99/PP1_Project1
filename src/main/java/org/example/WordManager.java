@@ -30,6 +30,8 @@ public class WordManager {
     }
 
     public void start() {
+        //call the loadFile function so we can read the file before the loop
+        wc.loadFile();
         //Continue to loop until the user inputs the exit code
         while(true) {
             int menuNum = sMenu();
