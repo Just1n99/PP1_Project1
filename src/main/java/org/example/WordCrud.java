@@ -176,7 +176,7 @@ public class WordCrud implements ICRUD {
     public void saveFile() {
         try {
             //write a file with the file name as dictionary.txt
-            PrintWriter pWrite = new PrintWriter(new FileWriter("dictionary.txt"));
+            PrintWriter pWrite = new PrintWriter(new FileWriter("dictionaryNew.txt"));
             for (int i = 0; i < list.size(); i++) {
                 //while we don't reach the end of the file, get each information from the list
                 Word info = list.get(i);

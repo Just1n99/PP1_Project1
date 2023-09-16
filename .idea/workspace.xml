@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69326086-a5ee-4182-a396-e3d0911b400c" name="Changes" comment="Completed saveFile function">
+    <list default="true" id="69326086-a5ee-4182-a396-e3d0911b400c" name="Changes" comment="Completed searchWord function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCrud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,7 @@
       <workItem from="1694767615746" duration="1592000" />
       <workItem from="1694769227761" duration="7459000" />
       <workItem from="1694843520289" duration="1143000" />
-      <workItem from="1694844738110" duration="1573000" />
+      <workItem from="1694844738110" duration="2275000" />
     </task>
     <task id="LOCAL-00001" summary="First Outline of Project">
       <option name="closed" value="true" />
@@ -240,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694845937982</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed searchLevel function">
+      <option name="closed" value="true" />
+      <created>1694846503875</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1694846503875</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Completed searchWord function">
+      <option name="closed" value="true" />
+      <created>1694846706801</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1694846706801</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +284,8 @@
     <MESSAGE value="First Outline of loadFile" />
     <MESSAGE value="Completed loadFile function" />
     <MESSAGE value="Completed saveFile function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed saveFile function" />
+    <MESSAGE value="Completed searchLevel function" />
+    <MESSAGE value="Completed searchWord function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed searchWord function" />
   </component>
 </project>
