@@ -180,7 +180,7 @@ public class WordCrud implements ICRUD {
             for (int i = 0; i < list.size(); i++) {
                 //while we don't reach the end of the file, get each information from the list
                 Word info = list.get(i);
-                //pass the value of the iformation to fileString function in Word
+                //pass the value of the information to fileString function in Word
                 pWrite.write(info.fileString() + "\n");
             }
             pWrite.close();
