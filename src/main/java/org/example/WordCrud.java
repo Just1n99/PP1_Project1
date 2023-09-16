@@ -198,4 +198,12 @@ public class WordCrud implements ICRUD {
         //call the displayLevel function passing the level variable
         displayList(level);
     }
+
+    public void searchWord() {
+        System.out.print("=> 검색할 단어 입력: ");
+        //get user input of letters of words they are looking for
+        String token = input.next();
+        //call the displayList function passing the token variable
+        displayList(token);
+    }
 }
