@@ -45,6 +45,9 @@ public class WordManager {
                 System.out.println("You have successfully terminated the program. GoodBye!");
                 System.exit(0);
             }
+            if(menuNum == 2)
+                wc.searchLevel();
+
             if(menuNum == 3) {
                 //Code to search for word in list
             }

@@ -69,6 +69,7 @@ public class WordCrud implements ICRUD {
             String word = list.get(i).getVocab();
             //if the current word does not contain the letters, move on to the next
             if(!word.contains(token)) continue;
+            //if the level matches, print out the information
             System.out.print((j + 1) + " ");
             System.out.println(list.get(i).toString());
             idInfo.add(j);
@@ -76,6 +77,21 @@ public class WordCrud implements ICRUD {
         }
         System.out.println("--------------------------------");
         return idInfo;
+    }
+
+    public void displayList(int level) {
+        int j = 0;
+        System.out.println("--------------------------------");
+        for(int i = 0; i < list.size(); i++) {
+            //get the level on the current vocab the loop is on
+            int cLevel = list.get(i).getLevel();
+            //if the current level does not match the level the user desires, move on to the next
+            if(cLevel != level) continue;
+            System.out.print((j + 1) + " ");
+            System.out.println(list.get(i).toString());
+            j++;
+        }
+        System.out.println("--------------------------------");
     }
 
     //Update function to update the defintion in the word list
@@ -173,5 +189,13 @@ public class WordCrud implements ICRUD {
         catch(IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void searchLevel() {
+        System.out.print("=> 원하는 레벨은? (1, 2, 3)? ");
+        //get user input for level they want to see
+        int level = input.nextInt();
+        //call the displayLevel function passing the level variable
+        displayList(level);
     }
 }
