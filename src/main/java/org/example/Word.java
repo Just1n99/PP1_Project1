@@ -48,4 +48,9 @@ public class Word {
         //Return the entire information of each vocab from level, word, then meaning
         return String.format("%-3s", displayLevel)+ String.format("%15s", vocab) + "  " + def;
     }
+
+    //function that will write the format of our file
+    public String fileString() {
+        return this.level + "|" + this.vocab + "|" + this.def;
+    }
 }

@@ -1,7 +1,5 @@
 package org.example;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -155,6 +153,24 @@ public class WordCrud implements ICRUD {
             System.out.println("=> " + numWords + "개 로딩 완료!");
         }
         catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void saveFile() {
+        try {
+            //write a file with the file name as dictionary.txt
+            PrintWriter pWrite = new PrintWriter(new FileWriter("dictionary.txt"));
+            for (int i = 0; i < list.size(); i++) {
+                //while we don't reach the end of the file, get each information from the list
+                Word info = list.get(i);
+                //pass the value of the iformation to fileString function in Word
+                pWrite.write(info.fileString() + "\n");
+            }
+            pWrite.close();
+            System.out.println("=> 데이터 저장 완료!");
+        }
+        catch(IOException e) {
             e.printStackTrace();
         }
     }

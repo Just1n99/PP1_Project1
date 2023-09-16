@@ -48,14 +48,17 @@ public class WordManager {
             if(menuNum == 3) {
                 //Code to search for word in list
             }
+            //if user inputs 5, call the update function
             if(menuNum == 5) {
                 wc.update();
             }
+            //if user inputs 6, call the delete function
             if(menuNum == 6){
                 wc.delete();
             }
+            //if user inputs 7, call the saveFile function
             if(menuNum == 7) {
-                //code to safe file
+                wc.saveFile();
             }
             //If user inputs 1, call the displayList function
             else if(menuNum == 1) {
