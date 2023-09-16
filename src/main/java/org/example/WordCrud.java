@@ -29,6 +29,22 @@ public class WordCrud implements ICRUD {
         return new Word(id = 0, level, vocab, def);
     }
 
+    @Override
+    public int updateList(Object obj) {
+        return 0;
+    }
+
+    @Override
+    public int deleteList(Object obj) {
+        return 0;
+    }
+
+
+    @Override
+    public void selectWords(int id) {
+
+    }
+
     public void addWord() {
         Word added = (Word)add();
         list.add(added);
@@ -42,9 +58,43 @@ public class WordCrud implements ICRUD {
         }
         System.out.println("--------------------------------");
     }
+
+    //function to display all the words that contain the letters the user input
+    public ArrayList<Integer> displayList(String token) {
+        ArrayList<Integer> idInfo = new ArrayList<>();
+        int j = 0;
+        System.out.println("--------------------------------");
+        for(int i = 0; i < list.size(); i++) {
+            String word = list.get(i).getVocab();
+            //if the current word does not contain the letters, move on to the next
+            if(!word.contains(token)) continue;
+            System.out.print((j + 1) + " ");
+            System.out.println(list.get(i).toString());
+            idInfo.add(j);
+            j++;
+        }
+        System.out.println("--------------------------------");
+        return idInfo;
+    }
+
+    //Update function to update the defintion in the word list
     public void update() {
         System.out.print("=> 수정할 단어 검색: ");
+        //take user input to find the words they are looking for
         String token = input.next();
-
+        //pass the value of the user input to the displayList function
+        ArrayList<Integer> idInfo = this.displayList(token);
+        System.out.print("=> 수정할 번호 선택: ");
+        //obtain the info of the id the user wants
+        int id = input.nextInt();
+        input.nextLine();
+        System.out.print("=> 뜻 입력: ");
+        //update the new definition the user wants
+        String def = input.nextLine();
+        //create Word class object and get assign it the id value user input
+        Word word = list.get(idInfo.get(id-1));
+        //change update the definition of the word
+        word.setDef(def);
+        System.out.println("단어가 수정되었습니다.");
     }
 }
