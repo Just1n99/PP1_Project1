@@ -108,6 +108,17 @@ public class WordCrud implements ICRUD {
         System.out.print("=> 삭제할 번호 선택: ");
         //obtain the info of the id the user wants
         int id = input.nextInt();
-
+        System.out.print("=> 정말로 삭제하실래요 (Y/N)? ");
+        //this is to take user's answer of yes or no
+        String userAnswer = input.next();
+        if(userAnswer.equalsIgnoreCase("y")) {
+            //if y then delete word and print success message
+            list.remove((int)idInfo.get(id-1));
+            System.out.println("단어가 삭제되었습니다!");
+        }
+        else {
+            //print cancel message
+            System.out.println("취소되었습니다.");
+        }
     }
 }
