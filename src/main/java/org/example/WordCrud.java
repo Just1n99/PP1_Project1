@@ -1,4 +1,7 @@
 package org.example;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -119,6 +122,23 @@ public class WordCrud implements ICRUD {
         else {
             //print cancel message
             System.out.println("취소되었습니다.");
+        }
+    }
+
+    //function to load and read file
+    public void loadFile() {
+        try {
+            //try to see if there is a file name dictionary.txt
+            BufferedReader buffer = new BufferedReader(new FileReader("dictionary.txt"));
+            String line;
+            //read each line
+            line = buffer.readLine();
+            //split each data in line and add them to array
+            String data[] = line.split("\\|");
+            buffer.close();
+        }
+        catch(IOException e){
+            e.printStackTrace();
         }
     }
 }
