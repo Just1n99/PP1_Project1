@@ -50,7 +50,7 @@ public class WordManager {
                 wc.update();
             }
             if(menuNum == 6){
-                //code to delete word in list
+                wc.delete();
             }
             if(menuNum == 7) {
                 //code to safe file

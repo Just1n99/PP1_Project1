@@ -87,6 +87,7 @@ public class WordCrud implements ICRUD {
         System.out.print("=> 수정할 번호 선택: ");
         //obtain the info of the id the user wants
         int id = input.nextInt();
+        //this is so that the program does not skip any lines and waits for user input
         input.nextLine();
         System.out.print("=> 뜻 입력: ");
         //update the new definition the user wants
@@ -96,5 +97,17 @@ public class WordCrud implements ICRUD {
         //change update the definition of the word
         word.setDef(def);
         System.out.println("단어가 수정되었습니다.");
+    }
+
+    public void delete() {
+        System.out.print("=> 삭제할 단어 검색: ");
+        //take user input to find the words they are looking for
+        String token = input.next();
+        //pass the value of the user input to the displayList function
+        ArrayList<Integer> idInfo = this.displayList(token);
+        System.out.print("=> 삭제할 번호 선택: ");
+        //obtain the info of the id the user wants
+        int id = input.nextInt();
+
     }
 }
